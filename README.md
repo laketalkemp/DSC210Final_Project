@@ -24,6 +24,10 @@
 
 * To perform the Fully Connected Neural Network Analysis, open file `FILENAME.ipynb` and run all the notebook cells. This file is preferred to be run on a GPU for faster performance.
 
+#### Data Description:
+This research aimed to examine the case of customers' default payments in Taiwan and compare the predictive accuracy of the probability of default among six data mining methods. From the risk management perspective, the predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. The actual probability of default as the response variable (Y) and the predictive probability of default as the independent variable (X). This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+* Yeh, I. (2009). Default of Credit Card Clients [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C55S3H.
+
 #### Results:
 
 * **Markov-Chain Monte Carlo Analysis (MCMC)**
@@ -41,19 +45,21 @@ Visualized embedding of documents in 2-D space:
 <img width="816" alt="Screen Shot 2022-04-15 at 9 23 07 AM" src="https://user-images.githubusercontent.com/18485647/163595568-e9d9fd26-986a-4c06-8bf8-3bfbb95dbc79.png">
 
 * **Fully Connected Neural Network Analysis (FCNN)**
+Artificial neural networks are increasing in prevalence for these kinds of tasks due to their efficacy, broad use cases, and ability to modulate their complexity; for this supervised learning binary classification task, we built a simple five-layer fully connected neural network.
+
 <img width="844" alt="Fully Connected Neural Network" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Image.png">
 
 Confusion Matrix:
-<img width="844" alt="FCNN Confusion Matrix" src="https://user-images.githubusercontent.com/18485647/163595579-638c74c8-27f4-4ee2-ade2-e62406422600.png">
+<img width="844" alt="FCNN Confusion Matrix" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNConfusionMatrix.png">
 
 Classification Report:
 <p align="center">
-  <img width="844" alt="FCNN Classification Report" src="https://user-images.githubusercontent.com/18485647/163595666-06612d57-978b-4245-b89f-72fdf4bc1f7e.png"> 
+  <img width="844" alt="FCNN Classification Report" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNClassificationReport.png"> 
 </p>
 
 Receiver Operator Curve (ROC):
 <p align="center">
-  <img width="844" alt="FCNN Receiver Operator Curve" src="https://user-images.githubusercontent.com/18485647/163595676-8fb7feb8-7471-440a-a19f-8c2735f987cb.png">
+  <img width="844" alt="FCNN Receiver Operator Curve" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNROC.png">
 </p>
 
 Neural Network (FCNN) Validation Results:
