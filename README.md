@@ -45,20 +45,30 @@ The MCMC model gives insight into the uncertainty in our $\beta$ coefficients. T
 </p>
  This 'memory-less' property makes MCMC computationally feasible. Each step depends on where we are, not how we got here.
 
-Top 5 words for each of the topics:
-<img width="828" alt="Screen Shot 2022-04-15 at 9 20 17 AM" src="https://user-images.githubusercontent.com/18485647/163595256-eaa19d1b-9c52-4cd2-9a63-b1dbcd728d23.png">
-
-Distributions of top 3 topics to each document:
 <p align="center">
-<img width="33%" alt="Screen Shot 2022-04-15 at 9 19 11 AM" src="https://user-images.githubusercontent.com/18485647/163595137-f9ea7e72-1f20-417f-bad4-4161cfcbe2f3.png">
- <img width="33%" alt="Screen Shot 2022-04-15 at 9 20 03 AM" src="https://user-images.githubusercontent.com/18485647/163595234-1951d9bf-0a54-40ec-8002-50d0042be260.png">
- <img width="33%" alt="Screen Shot 2022-04-15 at 9 19 35 AM" src="https://user-images.githubusercontent.com/18485647/163595185-18ca8fcc-ef7d-48fe-b7a5-76bb485a80a2.png">
+  <img width="816" alt="MCMC Model" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d3256b6aebb92afd9209d6f256df89c4328552be/MCMC%20Image.png">
 </p>
-Visualized embedding of documents in 2-D space:
-<img width="816" alt="Screen Shot 2022-04-15 at 9 23 07 AM" src="https://user-images.githubusercontent.com/18485647/163595568-e9d9fd26-986a-4c06-8bf8-3bfbb95dbc79.png">
+
+Confusion Matrix:
+The logR model, on the other hand, has a very high TN rate. However, the other three quadrants are roughly around the same fractions as one another, which doesn’t bode too well for differentiating defaulted customers from those who did not.
+
+<p align="center">
+<img width="516" alt="MCMC Confusion Matrix" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d3256b6aebb92afd9209d6f256df89c4328552be/Confusion_matrix_MCMC.png">
+</p>
+
+Receiver Operating Characteristics (ROC) Curve:
+The MCMC logR model performs with an AUC of 0.73. The ROC curve is a visualization of the performance of the binary classification model. It plots the true positive rate (TPR) and false positive rate (FPR) at different classification thresholds.
+<p align="center">
+<img width="516" alt="MCMC ROC Curve" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d3256b6aebb92afd9209d6f256df89c4328552be/ROC_Curve_MCMC.png">
+</p>
+
+Classification Report:
+<p align="center">
+  <img width="516" alt="MCMC Classification Report" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d3256b6aebb92afd9209d6f256df89c4328552be/Class_report_MCMC.png">
+</p>
 
 #### **Fully Connected Neural Network Analysis (FCNN)**
-Artificial neural networks are increasing in prevalence for these kinds of tasks due to their efficacy, broad use cases, and ability to modulate their complexity; for this supervised learning binary classification task, we built a simple five-layer fully connected neural network. <br>
+Artificial neural networks are increasing in prevalence for these kinds of tasks due to their efficacy, broad use cases, and ability to modulate their complexity; for this supervised learning binary classification task, we built a simple five-layer fully connected neural network. In the context of credit risk assessment, neural networks can effectively model the complex, nonlinear relationships between various financial and demographic factors that influence a borrower's creditworthiness. They can handle large and diverse datasets, identify subtle patterns, and adapt to changing economic conditions (Khashman, 2010). As a result, neural networks have the potential to improve the accuracy and reliability of credit risk predictions significantly.<br>
 
 <p align="center">
   <img width="516" alt="Fully Connected Neural Network" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Image.png">
@@ -78,7 +88,7 @@ The FCNN data has been weighted during training, explaining the different suppor
   <img width="516" alt="FCNN Classification Report" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNClassificationReport.png"> 
 </p>
 
-Receiver Operator Curve (ROC):
+Receiver Operating Characteristics (ROC) Curve:
 A ROC curve is another important metric of classification accuracy; the area under the curve, or AUC, represents the probability of correctly classifying a given data point, and the higher the AUC, the better; here, we see that the FCNN has AUC of 0.06 points higher than the MCMC logR, meaning that it classifies correctly more often. <br>
 
 <p align="center">
