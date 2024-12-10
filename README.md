@@ -17,7 +17,7 @@
   Typing defines a standard notation for Python functions and variable type annotations. This notation can document code in a concise, standard format.
   - [**`pytensor`**](https://pytensor.readthedocs.io/en/latest/install.html): Python library that allows you to define, optimize/rewrite, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
   - [**`scipy`**](https://scipy.org/install/): SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers, and other tasks common in science and engineering.
-  - [**imblearn**](https://imbalanced-learn.org/dev/install.html#:~:text=maintenance-,Install,-%23): Imbalanced-learn is an open source, MIT-licensed library relying on `sci-kit-learn`providing tools for classification with imbalanced classes.
+  - [**`imblearn`**](https://imbalanced-learn.org/dev/install.html#:~:text=maintenance-,Install,-%23): Imbalanced-learn is an open source, MIT-licensed library relying on `sci-kit-learn`providing tools for classification with imbalanced classes.
 
 * To perform the Markov-Chain Monte Carlo Analysis, open file [`MCMC.ipynb`](https://github.com/laketalkemp/DSC210Final_Project/blob/a4739e8a464b8b641587fceccae3490d3bbb36d4/MCMC.ipynb) and run all the notebook cells on a GPU for faster performance.
 
