@@ -41,15 +41,19 @@ Visualized embedding of documents in 2-D space:
 <img width="816" alt="Screen Shot 2022-04-15 at 9 23 07 AM" src="https://user-images.githubusercontent.com/18485647/163595568-e9d9fd26-986a-4c06-8bf8-3bfbb95dbc79.png">
 
 * **Fully Connected Neural Network Analysis (FCNN)**
+<img width="844" alt="Fully Connected Neural Network" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Image.png">
 
-Top 5 words for each of the topics:
-<img width="844" alt="Screen Shot 2022-04-15 at 9 23 15 AM" src="https://user-images.githubusercontent.com/18485647/163595579-638c74c8-27f4-4ee2-ade2-e62406422600.png">
+Confusion Matrix:
+<img width="844" alt="FCNN Confusion Matrix" src="https://user-images.githubusercontent.com/18485647/163595579-638c74c8-27f4-4ee2-ade2-e62406422600.png">
 
-Distributions of top 3 topics to each document:
+Classification Report:
 <p align="center">
-  <img width="33%" alt="Screen Shot 2022-04-15 at 9 24 03 AM" src="https://user-images.githubusercontent.com/18485647/163595666-06612d57-978b-4245-b89f-72fdf4bc1f7e.png">
-<img width="33%" alt="Screen Shot 2022-04-15 at 9 24 12 AM" src="https://user-images.githubusercontent.com/18485647/163595676-8fb7feb8-7471-440a-a19f-8c2735f987cb.png">
-<img width="33%" alt="Screen Shot 2022-04-15 at 9 24 19 AM" src="https://user-images.githubusercontent.com/18485647/163595701-c097c01f-66f4-497a-af5b-4f63988e3284.png">
+  <img width="33%" alt="FCNN Classification Report" src="https://user-images.githubusercontent.com/18485647/163595666-06612d57-978b-4245-b89f-72fdf4bc1f7e.png"> 
+</p>
+
+Receiver Operator Curve (ROC):
+<p align="center">
+  <img width="33%" alt="FCNN Receiver Operator Curve" src="https://user-images.githubusercontent.com/18485647/163595676-8fb7feb8-7471-440a-a19f-8c2735f987cb.png">
 </p>
 
 Neural Network (FCNN) Validation Results:
