@@ -37,7 +37,7 @@ Mutual Information (MI) scores are used to determine feature importance by measu
 ### Results:
 Our goal is to predict default risk - a binary outcome. <br>
 
-#### **Markov-Chain Monte Carlo Analysis (MCMC)**
+#### **Markov-Chain Monte Carlo (MCMC) Analysis**
 The MCMC model gives insight into the uncertainty in our $\beta$ coefficients. These are not just point estimates, but full distributions showing how each feature affects default risk. A Markov Chain is a stochastic process wherein the next state depends only on the current state: <br>
 <p align="center">
   $p(X_{t+1} = \frac{x}{X_t} , X_{t-1} ,...) = p(X_{t+1} = \frac{x}{X_t})$
@@ -66,7 +66,7 @@ Classification Report:
   <img width="516" alt="MCMC Classification Report" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d3256b6aebb92afd9209d6f256df89c4328552be/Class_report_MCMC.png">
 </p>
 
-#### **Fully Connected Neural Network Analysis (FCNN)**
+#### **Fully Connected Neural Network (FCNN) Analysis**
 Artificial neural networks are increasing in prevalence for these kinds of tasks due to their efficacy, broad use cases, and ability to modulate their complexity; for this supervised learning binary classification task, we built a simple five-layer fully connected neural network. In the context of credit risk assessment, neural networks can effectively model the complex, nonlinear relationships between various financial and demographic factors that influence a borrower's creditworthiness. They can handle large and diverse datasets, identify subtle patterns, and adapt to changing economic conditions (Khashman, 2010). As a result, neural networks have the potential to improve the accuracy and reliability of credit risk predictions significantly.<br>
 
 <p align="center">
