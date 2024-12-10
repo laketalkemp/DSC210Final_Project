@@ -80,14 +80,14 @@ The FCNN has high True Negative and True Positive ratios, indicating its classif
 </p>
 
 Classification Report:
-The FCNN data has been weighted during training, explaining the different support splits across the two model reports.
+Although the FCNN data has been weighted during training, model validation is performed using the original, unbalanced test data.
 
 <p align="center">
   <img width="516" alt="FCNN Classification Report" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d4bb55d966760e9d3444bbc0de16757bed031505/SOTA_report.JPG"> 
 </p>
 
 Receiver Operating Characteristics (ROC) Curve:
-A ROC curve is another important metric of classification accuracy; the area under the curve, or AUC, represents the probability of correctly classifying a given data point, and the higher the AUC, the better; here, we see that the FCNN has AUC of 0.06 points higher than the MCMC logR, meaning that it classifies correctly more often. <br>
+A ROC curve is another important metric of classification accuracy; the area under the curve, or AUC, represents the probability of correctly classifying a given data point, and the higher the AUC, the better; here, we see that the FCNN has AUC of 0.04 points higher than the MCMC logR, meaning that it classifies correctly more often. <br>
 
 <p align="center">
   <img width="516" alt="FCNN Receiver Operator Curve" src="https://github.com/laketalkemp/DSC210Final_Project/blob/fe49e0fc7e6f51c0e1b84ed4874bffcea14defe4/SOTA_ROC.JPG">
