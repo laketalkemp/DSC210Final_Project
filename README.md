@@ -25,12 +25,18 @@
 * To perform the Fully Connected Neural Network Analysis, open file `FILENAME.ipynb` and run all the notebook cells. This file is preferred to be run on a GPU for faster performance.
 
 #### Data Description:
-This research aimed to examine the case of customers' default payments in Taiwan and compare the predictive accuracy of the probability of default among six data mining methods. From the risk management perspective, the predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. The actual probability of default as the response variable (Y) and the predictive probability of default as the independent variable (X). This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+This research aimed to examine the case of customers' default payments in Taiwan and compare the predictive accuracy of the probability of default among six data mining methods. From the risk management perspective, the predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. The actual probability of default as the response variable (Y) and the predictive probability of default as the independent variable (X). We have 30,000 credit customers, each described by 23 different features covering their payment history, demographic information, and billing patterns. This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 * Yeh, I. (2009). Default of Credit Card Clients [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C55S3H.
 
 #### Results:
+Our goal is to predict default risk - a binary outcome. <br>
 
 * **Markov-Chain Monte Carlo Analysis (MCMC)**
+The MCMC model gives insight into the uncertainty in our $\beta$ coefficients. These are not just point estimates, but full distributions showing how each feature affects default risk. A Markov Chain is a stochastic process wherein the next state depends only on the current state: <br>
+<p align="center">
+  $p(X_{t+1} = \frac{x}{X_t} , X_{t-1} ,...) = p(X_{t+1} = \frac{x}{X_t})$
+</p>
+ This 'memory-less' property makes MCMC computationally feasible. Each step depends on where we are, not how we got here.
 
 Top 5 words for each of the topics:
 <img width="828" alt="Screen Shot 2022-04-15 at 9 20 17 AM" src="https://user-images.githubusercontent.com/18485647/163595256-eaa19d1b-9c52-4cd2-9a63-b1dbcd728d23.png">
@@ -45,22 +51,34 @@ Visualized embedding of documents in 2-D space:
 <img width="816" alt="Screen Shot 2022-04-15 at 9 23 07 AM" src="https://user-images.githubusercontent.com/18485647/163595568-e9d9fd26-986a-4c06-8bf8-3bfbb95dbc79.png">
 
 * **Fully Connected Neural Network Analysis (FCNN)**
-Artificial neural networks are increasing in prevalence for these kinds of tasks due to their efficacy, broad use cases, and ability to modulate their complexity; for this supervised learning binary classification task, we built a simple five-layer fully connected neural network.
+Artificial neural networks are increasing in prevalence for these kinds of tasks due to their efficacy, broad use cases, and ability to modulate their complexity; for this supervised learning binary classification task, we built a simple five-layer fully connected neural network. <br>
 
-<img width="844" alt="Fully Connected Neural Network" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Image.png">
+<p align="center">
+  <img width="516" alt="Fully Connected Neural Network" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Image.png">
+</p>
 
 Confusion Matrix:
-<img width="844" alt="FCNN Confusion Matrix" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNConfusionMatrix.png">
+The FCNN has high True Negative and True Positive ratios, indicating its classification is reasonably accurate. <br>
+
+<p align="center"
+<img width="516" alt="FCNN Confusion Matrix" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNConfusionMatrix.png">
+</p>
 
 Classification Report:
+The FCNN data has been weighted during training, explaining the different support splits across the two model reports.
+
 <p align="center">
-  <img width="844" alt="FCNN Classification Report" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNClassificationReport.png"> 
+  <img width="516" alt="FCNN Classification Report" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNClassificationReport.png"> 
 </p>
 
 Receiver Operator Curve (ROC):
+A ROC curve is another important metric of classification accuracy; the area under the curve, or AUC, represents the probability of correctly classifying a given data point, and the higher the AUC, the better; here, we see that the FCNN has AUC of 0.06 points higher than the MCMC logR, meaning that it classifies correctly more often. <br>
+
 <p align="center">
-  <img width="844" alt="FCNN Receiver Operator Curve" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNROC.png">
+  <img width="516" alt="FCNN Receiver Operator Curve" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/FCNNROC.png">
 </p>
 
 Neural Network (FCNN) Validation Results:
-<img width="844" alt="Loan Default Prediction Classification Validation Results" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Validation%20History.png">
+<p align="center">
+<img width="516" alt="Loan Default Prediction Classification Validation Results" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Validation%20History.png">
+</p>
