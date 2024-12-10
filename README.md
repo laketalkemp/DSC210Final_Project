@@ -48,13 +48,13 @@ Confusion Matrix:
 
 Classification Report:
 <p align="center">
-  <img width="33%" alt="FCNN Classification Report" src="https://user-images.githubusercontent.com/18485647/163595666-06612d57-978b-4245-b89f-72fdf4bc1f7e.png"> 
+  <img width="844" alt="FCNN Classification Report" src="https://user-images.githubusercontent.com/18485647/163595666-06612d57-978b-4245-b89f-72fdf4bc1f7e.png"> 
 </p>
 
 Receiver Operator Curve (ROC):
 <p align="center">
-  <img width="33%" alt="FCNN Receiver Operator Curve" src="https://user-images.githubusercontent.com/18485647/163595676-8fb7feb8-7471-440a-a19f-8c2735f987cb.png">
+  <img width="844" alt="FCNN Receiver Operator Curve" src="https://user-images.githubusercontent.com/18485647/163595676-8fb7feb8-7471-440a-a19f-8c2735f987cb.png">
 </p>
 
 Neural Network (FCNN) Validation Results:
-<img width="784" alt="Loan Default Prediction Classification Validation Results" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Validation%20History.png">
+<img width="844" alt="Loan Default Prediction Classification Validation Results" src="https://github.com/laketalkemp/DSC210Final_Project/blob/72c1e6529cb37267d8f7e4ff2481417067b897a0/FCNN%20Validation%20History.png">
