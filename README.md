@@ -22,7 +22,7 @@
 
 * To perform the Markov-Chain Monte Carlo Analysis, open file `MCMC.ipynb` and run all the notebook cells.
 
-* To perform the Fully Connected Neural Network Analysis, open file `FILENAME.ipynb` and run all the notebook cells. This file is preferred to be run on a GPU for faster performance.
+* To perform the Fully Connected Neural Network Analysis, open file `FCNN.ipynb` and run all the notebook cells. This file is preferred to be run on a GPU for faster performance.
 
 #### Data Description:
 This research aimed to examine the case of customers' default payments in Taiwan and compare the predictive accuracy of the probability of default among six data mining methods. From the risk management perspective, the predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. The actual probability of default as the response variable (Y) and the predictive probability of default as the independent variable (X). We have 30,000 credit customers, each described by 23 different features covering their payment history, demographic information, and billing patterns. This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
