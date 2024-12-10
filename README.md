@@ -35,10 +35,10 @@ Mutual Information (MI) scores are used to determine feature importance by measu
 <img width="516" alt="Feature Importance" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/Feature%20Importance(Matplotlib).png">
 </p>
 
-#### Results:
+### Results:
 Our goal is to predict default risk - a binary outcome. <br>
 
-* **Markov-Chain Monte Carlo Analysis (MCMC)**
+#### **Markov-Chain Monte Carlo Analysis (MCMC)**
 The MCMC model gives insight into the uncertainty in our $\beta$ coefficients. These are not just point estimates, but full distributions showing how each feature affects default risk. A Markov Chain is a stochastic process wherein the next state depends only on the current state: <br>
 <p align="center">
   $p(X_{t+1} = \frac{x}{X_t} , X_{t-1} ,...) = p(X_{t+1} = \frac{x}{X_t})$
@@ -57,7 +57,7 @@ Distributions of top 3 topics to each document:
 Visualized embedding of documents in 2-D space:
 <img width="816" alt="Screen Shot 2022-04-15 at 9 23 07 AM" src="https://user-images.githubusercontent.com/18485647/163595568-e9d9fd26-986a-4c06-8bf8-3bfbb95dbc79.png">
 
-* **Fully Connected Neural Network Analysis (FCNN)**
+#### **Fully Connected Neural Network Analysis (FCNN)**
 Artificial neural networks are increasing in prevalence for these kinds of tasks due to their efficacy, broad use cases, and ability to modulate their complexity; for this supervised learning binary classification task, we built a simple five-layer fully connected neural network. <br>
 
 <p align="center">
