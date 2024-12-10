@@ -28,6 +28,13 @@
 This research aimed to examine the case of customers' default payments in Taiwan and compare the predictive accuracy of the probability of default among six data mining methods. From the risk management perspective, the predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. The actual probability of default as the response variable (Y) and the predictive probability of default as the independent variable (X). We have 30,000 credit customers, each described by 23 different features covering their payment history, demographic information, and billing patterns. This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 * Yeh, I. (2009). Default of Credit Card Clients [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C55S3H.
 
+### Feature Selection
+Mutual Information (MI) scores are used to determine feature importance by measuring the degree of dependence between each feature and the target variable; a higher MI score indicates a stronger relationship between the feature and the target, signifying that the feature is more important for prediction purposes.
+
+<p align="center">
+<img width="516" alt="Feature Importance" src="https://github.com/laketalkemp/DSC210Final_Project/blob/d51a57002ff9c3f77c9a67e75b14badf261664a0/Feature%20Importance(Matplotlib).png">
+</p>
+
 #### Results:
 Our goal is to predict default risk - a binary outcome. <br>
 
